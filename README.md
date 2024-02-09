@@ -3,4 +3,5 @@
 ## Usando Python e as bibliotecas PySimpleGui & Pytube
 
 ## Run Aplication
-''' python main.py '''
+```
+python main.py
