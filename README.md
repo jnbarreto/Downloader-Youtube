@@ -8,7 +8,9 @@
 python3 -m venv venv
 ```
 ### Ativar a venv
-``` source venv/bin/activate ```
+```
+$ source venv/bin/activate
+```
 ### Executando a aplicação
 ```
 python main.py
