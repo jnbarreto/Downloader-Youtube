@@ -24,10 +24,10 @@ def install_dependencies():
 
 def dowloader():
     #Create interface TELA
-    sg.theme("Dark Blue 16")
+    sg.theme("DarkRed1")
 
     interface = [
-        [sg.Titlebar("Youtube DownLoad", None, "white", "gray")],
+        [sg.Titlebar("Youtube DownLoad", "assets/img/yt.png", "white", "gray")],
         [sg.Text("URL")],
         [sg.Input(size=(50,1), key="url")],
         [sg.Button("Download")]
