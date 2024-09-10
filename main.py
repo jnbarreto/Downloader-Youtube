@@ -1,4 +1,4 @@
-from pytube import YouTube
+from pytubefix import YouTube
 import PySimpleGUI as sg
 import subprocess
 import sys
@@ -7,7 +7,7 @@ import os
 def check_dependencies():
     try:
         import PySimpleGUI
-        import pytube
+        import pytubefix
         print("Dependências já instaladas.")
     except ImportError:
         print("Dependências não encontradas. Instalando...")
@@ -45,6 +45,7 @@ def dowloader():
             link = window["url"].get()
             video = YouTube(link)
             stream = video.streams.get_highest_resolution().download()
+        sg.popup("Download Finished")
         print("Download Finished")
 
     window.close()
